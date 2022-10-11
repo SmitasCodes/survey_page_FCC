@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1 id="title">Survey form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </header>
+        <section>
+            <form action="#" id="survey-form">
+                <div class="form-section">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" id="name"required placeholder="Enter your name" class="all_width">
+                </div>
+                <div class="form-section">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" id="email" class="all_width" required placeholder="Enter your email">
+                </div>
+                <div class="form-section">
+                    <label for="number" id="number-label">Age (optional)</label>
+                    <input type="number" id="number" class="all_width" min="18" max="65" placeholder="Enter your age">
+                </div>
+                <div class="form-section">
+                    <label for="dropdown">Choose your favorite baltic countrie</label>
+                    <select name="countries" id="dropdown" class="all_width">
+                        <option value="" disabled selected >Baltic Country</option>
+                        <option value="lithuania">Lithuania</option>
+                        <option value="latvia">Latvia</option>
+                        <option value="estonia">Estonia</option>
+                    </select>
+                </div>
+                <div class="form-section">
+                <label for="language" id="language-label">What language you know the best</label>
+                    <div class="block_section">
+                        <input type="radio" name="language" id="russian" value="russian">
+                        <label for="russian" class="language-label">Russian</label> 
+                    </div>
+                    <div class="block_section">
+                        <input type="radio" name="language" id="english" value="english">
+                        <label for="english" class="language-label">English</label>
+                    </div>
+                    <div class="block_section">
+                        <input type="radio" name="language" id="spanish" value="spanish">
+                        <label for="spanish" class="language-label">Spanish</label>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <label for="been-countries">What countries have you been?</label>
+                    <div class="block-section">
+                        <input type="checkbox" name="been-countries" value="germany" id="germany">
+                        <label for="germany" class="country-label">Germany</label>
+                    </div>
+                    <div class="block-section">
+                        <input type="checkbox" name="been-countries" value="poland" id="poland">
+                        <label for="poland" class="country-label">Poland</label>
+                    </div>
+                    <div class="block-section">
+                        <input type="checkbox" name="been-countries" value="france" id="france">
+                        <label for="france" class="country-label">France</label>
+                    </div>
+                    <div class="block-section">
+                        <input type="checkbox" name="been-countries" value="slovenia" id="slovenia">
+                        <label for="slovenia" class="country-label">Slovenia</label>
+                    </div>
+                    <div class="block-section">
+                        <input type="checkbox" name="been-countries" value="serbia" id="serbia">
+                        <label for="serbia" class="country-label">Serbia</label>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <label for="comment">Leave your comments below</label>
+                    <textarea name="comment" id="comment" rows="5" class="all_width"></textarea>
+                </div>
+                <div class="form-section">
+                    <input type="submit" value="Submit" id="submit" class="all_width">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
